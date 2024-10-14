@@ -9,10 +9,10 @@ import Searchitem from "../../componants/searchitem/Searchitem"
 
 const List = () => {
   const location = useLocation()
-  const [destination, setDestination] = useState(location.state.destination)
-  const [date, setdate] = useState(location.state.date)
+  const [destination] = useState(location.state.destination)
+  const [date] = useState(location.state.date)
   const [openDate, setOpenDate] = useState(false)
-  const [options, setoptions] = useState(location.state.options)
+  const [options] = useState(location.state.options)
 
   return (
     <div>
